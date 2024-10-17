@@ -3,7 +3,7 @@ import Head from '@/components/header';
 
 export default function Test() {
     return (
-        <div>
+        <div className='z-0'>
         <Image
             src="/lasershark.png"
             width={500}
