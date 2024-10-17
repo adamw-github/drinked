@@ -25,3 +25,13 @@ body {
     text-wrap: balance;
   }
 }
+.midbar{
+  display: grid;
+  grid-template-columns: 15rem auto 15rem;
+}
+
+.midbar-content{ /* Parent is grid */
+  justify-self: center;
+  left: 15rem; /* Same as the width of the sidenav */
+  right: 15rem;
+}
