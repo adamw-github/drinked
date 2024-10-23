@@ -8,14 +8,15 @@ interface props{
 export default function SidebarContent({isOpen, setIsOpen}: props) {
 
     return (
-        <div className='z-30 fixed top-0  rounded-xl'>
-        <div className="grid columns-1 rounded-xl">
-            <aside
-                className={`
-                    z-10
-                    bg-blue-400 text-slate-50
+        <aside className='z-30 fixed top-0'>
+        <div className="
+            grid columns-1
+            bg-blue-400 text-slate-50
+            rounded-r-xl">
+            <div
+                className={`       
                     h-screen
-                    rounded-r-xl
+                    overflow-auto
                     transition-all duration-300
                     ${isOpen ? "w-60" : "w-0 overflow-hidden"}
                 `}
@@ -32,22 +33,21 @@ export default function SidebarContent({isOpen, setIsOpen}: props) {
                     </button>
                 </div>
 
-                <div className="flex flex-col items-center">
-                    <div className="p-2">
+                <div className="flex flex-col items-center overflow">
+                    <div className="p-5">
                         <a href="#" className="hover:text-gray-300">
                             Home
                         </a>
                     </div>
-                    <div className="p-2">
+                    <div className="p-5">
                         <a href="#" className="hover:text-gray-300">
                             About
                         </a>
                     </div>
                 </div>
-            </aside>
-            
+            </div>
             
         </div>
-        </div>
+        </aside>
     )
 }
