@@ -15,7 +15,7 @@ export default function SidebarContent({isOpen, setIsOpen}: props) {
                     z-10
                     bg-blue-400 text-slate-50
                     h-screen
-                    rounded-xl
+                    rounded-r-xl
                     transition-all duration-300
                     ${isOpen ? "w-60" : "w-0 overflow-hidden"}
                 `}
