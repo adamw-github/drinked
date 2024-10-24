@@ -26,7 +26,7 @@ export default function SidebarContent({isOpen, setIsOpen}: props) {
             >
                 <div className='z-50'>
                     <button onClick={() => setIsOpen(!isOpen)}
-                        className="bg-transparent p-4 rounded-lg hover:shadow-md">
+                        className="bg-transparent p-4 rounded-lg">
                         <Image
                             src="/burger.png"
                             alt="Burger Menu"

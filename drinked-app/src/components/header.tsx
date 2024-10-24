@@ -5,25 +5,25 @@ export default function Header() {
         <div className="midbar bg-blue-300 text-slate-50">
             <SidebarButton />
             <div className="grid grid-cols-3">
-                <div className='col-start-2 text-center'>
+                <button className='col-start-2 text-center'>
                     <h1>Drinked</h1>
-                </div>
+                </button>
             </div>
             <div/>
             <div/>
-            <div className="grid grid-cols-4 text-center">
-                <div className="border">
+            <div className="grid grid-cols-4 text-center pb-2 mb-2">
+                <button className="">
                     Dashboard
-                </div>
-                <div className="border">
+                </button>
+                <button className="">
                     Add Drink
-                </div>
-                <div className="border">
+                </button>
+                <button className="">
                     About
-                </div>
-                <div className="border">
+                </button>
+                <button className="">
                     Login
-                </div>
+                </button>
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ export default function SidebarButton() {
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-transparent rounded-lg p-4 hover:shadow-md"
+                className="bg-transparent rounded-lg p-4"
             >
                 <Image
                     src="/burger.png"
