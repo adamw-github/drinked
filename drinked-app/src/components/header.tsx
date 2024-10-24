@@ -2,7 +2,7 @@ import SidebarButton from './sidebarbutton';
 
 export default function Header() {
     return (
-        <div className="midbar bg-blue-300 text-slate-50 pt-4">
+        <div className="midbar bg-blue-300 text-slate-50">
             <SidebarButton />
             <div className="grid grid-cols-3">
                 <div className='col-start-2 text-center'>

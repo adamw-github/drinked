@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Head from '@/components/header';
 
 export default function Test() {
     return (
