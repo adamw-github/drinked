@@ -53,5 +53,5 @@ export default function SidebarContent({isOpen, setIsOpen}: props) {
             
         </div>
         </aside>
-    )
+    );
 }

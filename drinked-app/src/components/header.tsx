@@ -18,16 +18,16 @@ export default function Header() {
                 <Link href="/dashboard"className='hover:shadow-md rounded-md'>
                     Dashboard
                 </Link>
-                <button className="">
+                <Link href="/#"className='hover:shadow-md rounded-md'>
                     Add Drink
-                </button>
-                <button className="">
-                    About
-                </button>
-                <button className="">
+                </Link>
+                <Link href="/#"className='hover:shadow-md rounded-md'>
                     Login
-                </button>
+                </Link>
+                <Link href="/#"className='hover:shadow-md rounded-md'>
+                    About
+                </Link>
             </div>
         </div>
-    )
+    );
 }

@@ -25,5 +25,5 @@ export default function SidebarButton() {
 
             <SidebarContent isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
-    )
+    );
 }
