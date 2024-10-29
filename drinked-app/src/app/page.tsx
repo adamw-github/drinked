@@ -17,7 +17,7 @@ export default function Home() {
           height={400}
         />
         <div className="flex items-center justify-center">
-          <div className="rounded-full p-6 bg-blue-200">Find out more</div>
+          <button className="rounded-full p-6 bg-blue-200">Find out more</button>
         </div>
         </div>
       </main>

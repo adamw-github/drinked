@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Test() {
+export default function Dashboard() {
     return (
         <div className='midbar z-0 h-screen'>
             <div/>

@@ -18,7 +18,7 @@ export default function Header() {
                 <Link href="/dashboard"className='hover:shadow-md rounded-md'>
                     Dashboard
                 </Link>
-                <Link href="/#"className='hover:shadow-md rounded-md'>
+                <Link href="/add-drink"className='hover:shadow-md rounded-md'>
                     Add Drink
                 </Link>
                 <Link href="/#"className='hover:shadow-md rounded-md'>
