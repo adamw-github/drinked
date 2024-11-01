@@ -1,0 +1,67 @@
+{
+    "drinks": [
+        {
+            "id": "0",
+            "name": "Asahi Super Dry",
+            "category": "Beer",
+            "abv": 5.0,
+            "description": "Japanese rice lager with a clean, crisp and refreshing taste."
+        },
+        {
+            "id": "1",
+            "name": "Sapporo Premium Beer",
+            "category": "Beer",
+            "abv": 4.9,
+            "description": "Japanese rice lager with a rich, malty flavour and a crisp finish."
+        },
+        {
+            "id": "2",
+            "name": "Suntory The Premium Malt's",
+            "category": "Beer",
+            "abv": 5.5,
+            "description": "Japanese pilsner with a light, refreshing taste and a smooth finish."
+        },
+        {
+            "id": "3",
+            "name": "Kirin Ichiban",
+            "category": "Beer",
+            "abv": 5.0,
+            "description": "Japanese rice lager with a rich, full-bodied flavour and a clean finish."
+        },
+        {
+            "id": "4",
+            "name": "Hakushika Junmai Ginjo",
+            "category": "Sake",
+            "abv": 15.0,
+            "description": "Japanese rice wine with a delicate, fruity aroma and a smooth, clean taste."
+        },
+        {
+            "id": "5",
+            "name": "Gekkeikan Horin",
+            "category": "Sake",
+            "abv": 15.5,
+            "description": "Japanese rice wine with a light, crisp flavour and a clean, dry finish."
+        },
+        {
+            "id": "6",
+            "name": "Sho Chiku Bai Classic",
+            "category": "Sake",
+            "abv": 14.5,
+            "description": "Japanese rice wine with a rich, full-bodied flavour and a smooth, mellow finish."
+        },
+        {
+            "id": "7",
+            "name": "Ozeki Nigori",
+            "category": "Sake",
+            "abv": 14.5,
+            "description": "Japanese rice wine with a creamy, sweet flavour and a smooth, velvety finish."
+        },
+        {
+            "id": "8",
+            "name": "Hakutsuru Sayuri",
+            "category": "Sake",
+            "abv": 12.5,
+            "description": "Japanese rice wine with a light, floral aroma and a soft, silky texture."
+        }
+    ]
+}
