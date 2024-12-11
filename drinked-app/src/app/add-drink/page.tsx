@@ -27,7 +27,7 @@ export default async function AddDrink() {
                 </div>
                 <div className='col-start-2 flex flex-col'>
                     <div className='p-3 mt-10 bg-blue-200 rounded-full'> Select drink</div>
-                        <AddDrinkButton selectContent={catalogue} />
+                        <AddDrinkButton catalogue={catalogue} />
 
                     <div className='p-3 mt-10 bg-blue-200 rounded-full'>Recent Drinks</div>
                     <div className='w-80 h-80'>
