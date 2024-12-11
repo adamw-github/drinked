@@ -1,11 +1,11 @@
 'use client'
 
 import { createContext, useContext, useState } from 'react';
-
+import { Drink } from '@/app/data-access/drink';
 
 type AddDrinkContextType = {
-    drinks: string[];
-    setDrinks: React.Dispatch<React.SetStateAction<string[]>>;
+    drinks: Drink[];
+    setDrinks: React.Dispatch<React.SetStateAction<Drink[]>>;
 }
 
 export const AddDrinkContext = createContext<AddDrinkContextType | null>(null);
@@ -17,7 +17,7 @@ export default function AddDrinkContextProvider(
         }>
     ){
         
-    const [drinks, setDrinks] = useState<string[]>(["hi"]);
+    const [drinks, setDrinks] = useState<Drink[]>([]);
 
     return (
         <AddDrinkContext.Provider value={{drinks,setDrinks}}>
