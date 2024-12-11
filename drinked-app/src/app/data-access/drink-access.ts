@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 
 export type Drink = {
-    id: string;
+    id: number;
     name: string;
     category: string;
     abv: number;
@@ -13,6 +13,6 @@ export async function loadDrinks(){
     return JSON.parse(file).drinks as Drink[];
 }
 
-export async function getDrink(catalogue: Drink[], drinkId: string){
+export async function getDrink(catalogue: Drink[], drinkId: number){
     return catalogue.find(drink => drink.id === drinkId) || {name: 'Drink not found'};
 }
