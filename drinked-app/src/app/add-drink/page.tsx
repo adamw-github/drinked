@@ -14,8 +14,6 @@ export default async function AddDrink() {
 
     const data = await getData();
 
-    const catalogue = await loadDrinks();
-    const drink = await getDrink(catalogue, "0");
     return (
         <div className='midbar min-h-screen'>
         <main className='col-start-2 text-center'>
@@ -23,9 +21,6 @@ export default async function AddDrink() {
                 <AddDrinkContextProvider>
                 <div className='col-start-1 flex flex-col'>
                     <div className='p-3 mt-10 bg-blue-200 rounded-full'>Your Drinks</div>
-                    {/* <ul> >myDrinks.map(()=>{<li>myDrinks.stuff</li>}) </ul>*/}
-                    {drink.name}
-                    
                         <Drinks/>
                 </div>
                 <div className='col-start-2 flex flex-col'>
