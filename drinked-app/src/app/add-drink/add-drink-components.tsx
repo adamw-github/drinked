@@ -1,7 +1,7 @@
 'use client'
-import { useContext } from "react";
+
 import { useDrinkContext } from "@/contexts/add-drink-context";
-import { Drink } from "@/app/data-access/drink";
+import { Drink } from "@/app/data-access/drink-access";
 
 const asahi: Drink = {
     "id": "0",
@@ -11,10 +11,19 @@ const asahi: Drink = {
     "description": "Japanese rice lager with a clean, crisp and refreshing taste."
 }
 
-export function AddDrinkButton(){
+export function AddDrinkButton({selectContent}: {selectContent: Drink[]}) {
     const {drinks, setDrinks} = useDrinkContext();
     return (
+        <>
+        <select>
+            {selectContent.map((drink) => (
+                <option key={drink.id} value={drink.id}>
+                    {drink.name}
+                </option>
+            ))}
+        </select>
         <button onClick={() => setDrinks((drinks)=>[...drinks, asahi])}>Add Drink</button>
+        </>
     )
 }
 

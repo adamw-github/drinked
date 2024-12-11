@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, useState } from 'react';
-import { Drink } from '@/app/data-access/drink';
+import { Drink } from '@/app/data-access/drink-access';
 
 type AddDrinkContextType = {
     drinks: Drink[];

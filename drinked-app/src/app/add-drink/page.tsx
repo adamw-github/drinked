@@ -1,9 +1,10 @@
 'use server'
 
 import Image from 'next/image';
-import {loadDrinks, getDrink} from '../data-access/drink';
+
 import AddDrinkContextProvider from '@/contexts/add-drink-context';
 import { AddDrinkButton , Drinks} from './add-drink-components';
+import { loadDrinks } from '../data-access/drink-access';
 
 export default async function AddDrink() {
 
@@ -13,6 +14,7 @@ export default async function AddDrink() {
     }
 
     const data = await getData();
+    const catalogue = await loadDrinks();
 
     return (
         <div className='midbar min-h-screen'>
@@ -25,7 +27,7 @@ export default async function AddDrink() {
                 </div>
                 <div className='col-start-2 flex flex-col'>
                     <div className='p-3 mt-10 bg-blue-200 rounded-full'> Add new drink</div>
-                        <AddDrinkButton/>
+                        <AddDrinkButton selectContent={catalogue} />
 
                     <div className='p-3 mt-10 bg-blue-200 rounded-full'>Recent Drinks</div>
                     <div className='w-80 h-80'>
