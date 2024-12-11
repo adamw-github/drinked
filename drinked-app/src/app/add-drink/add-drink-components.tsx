@@ -1,17 +1,17 @@
 'use client'
 import { useContext } from "react";
-import { AddDrinkContext } from "@/contexts/add-drink-context";
+import { useDrinkContext } from "@/contexts/add-drink-context";
 
 export function AddDrinkButton(){
-    const {count, setCount} = useContext(AddDrinkContext);
+    const {drinks, setDrinks} = useDrinkContext();
     return (
-        <button onClick={() => setCount(count + 1)}>{ count }</button>
+        <button onClick={() => setDrinks((drinks)=>[...drinks, "test"])}>Add Drink</button>
     )
 }
 
 export function Drinks(){
-    const {count, setCount} = useContext(AddDrinkContext);
+    const {drinks, setDrinks} = useDrinkContext();
     return (
-        <button onClick={() => setCount(count + 1)}>{ count }</button>
+        <button onClick={() => setDrinks((drinks)=>[...drinks, "test"])}>{ drinks }</button>
     )
 }

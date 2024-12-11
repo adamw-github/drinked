@@ -1,8 +1,14 @@
 'use client'
 
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-export const AddDrinkContext = createContext({count: 0, setCount: (count: number) => {}});
+
+type AddDrinkContextType = {
+    drinks: string[];
+    setDrinks: React.Dispatch<React.SetStateAction<string[]>>;
+}
+
+export const AddDrinkContext = createContext<AddDrinkContextType | null>(null);
 
 export default function AddDrinkContextProvider(
     {children}:
@@ -10,11 +16,20 @@ export default function AddDrinkContextProvider(
             children: React.ReactNode;
         }>
     ){
-    const [count, setCount] = useState(0);
+        
+    const [drinks, setDrinks] = useState<string[]>(["hi"]);
 
     return (
-        <AddDrinkContext.Provider value={{count, setCount}}>
+        <AddDrinkContext.Provider value={{drinks,setDrinks}}>
             {children}
         </AddDrinkContext.Provider>
     )
+}
+
+export function useDrinkContext(){
+    const context = useContext(AddDrinkContext);
+    if(!context){
+        throw new Error('useDrinkContext must be used within a AddDrinkContextProvider');
+    }
+    return context;
 }
